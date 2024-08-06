@@ -15,7 +15,7 @@ public class ModItems {
     /* v ITEMS v */
 
     public static final RegistryObject<Item> OMNITRIX = ITEMS.register("omnitrix",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     /* ^ ITEMS ^ */
 

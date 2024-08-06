@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "ben10mod:item/omnitrix_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "ben10mod:item/omnitrix_2d"
+    },
+    "fixed": {
+      "parent": "ben10mod:item/omnitrix_2d"
+    }
+  }
+}

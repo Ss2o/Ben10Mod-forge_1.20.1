@@ -17,7 +17,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.OMNITRIX);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
