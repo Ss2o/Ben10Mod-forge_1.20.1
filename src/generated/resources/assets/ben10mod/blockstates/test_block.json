@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ben10mod:block/test_block"
+    }
+  }
+}

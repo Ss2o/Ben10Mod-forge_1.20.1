@@ -1,6 +1,10 @@
 package net.Salvador.ben10mod;
 
 import com.mojang.logging.LogUtils;
+import net.Salvador.ben10mod.block.ModBlocks;
+import net.Salvador.ben10mod.item.ModCreativeModeTabs;
+import net.Salvador.ben10mod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,6 +28,10 @@ public class Ben10Mod {
     public Ben10Mod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -36,7 +44,6 @@ public class Ben10Mod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
